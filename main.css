@@ -1,0 +1,9 @@
+.image-grid {
+  display: grid;
+}
+
+.image-grid div {
+  background-image: url(http://lorempixel.com/output/city-q-c-640-480-3.jpg);
+  height: 200px;
+  width: 400px;
+}
