@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+p {
+  font-size: 1.13em;
+}
+
+h1, h2 {
+  font-family: 'Cardo', serif;
+}
+
 #navbar {
   background: #0E0E0E;
   text-align: center;
@@ -64,10 +72,44 @@ body {
 
 .image-grid {
   display: grid;
+  grid-template: 200px 200px / 350px 350px;
+  grid-gap: 1.5%;
 }
 
 .image-grid div {
   background-image: url("http://lorempixel.com/output/city-q-c-640-480-3.jpg");
-  height: 200px;
-  width: 400px;
+  background-size: cover;
+  margin-bottom: 2%;
+}
+
+.info-section {
+  margin-top: 3%;
+}
+
+.info-header {
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template: 300px / 20% 55%;
+  grid-gap: 3%;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-grid p {
+  line-height: 1.6;
+}
+
+.info-grid div button {
+  margin-top: 22%;
+  background: rgba(0, 0, 0, 0);
+  border-color: #fff;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 4% 8%;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
